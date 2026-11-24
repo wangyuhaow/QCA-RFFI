@@ -22,6 +22,7 @@ Following standard IEEE physical-layer security reproducibility practice during 
   - `qca_rffi/descriptor.py` — Exact 48-D same-packet conditional response descriptor $D(x)=[M;\Delta]$ and equal-marginal cyclic permutation control $\Delta^{\mathrm{perm}}$.
   - `qca_rffi/calibration.py` — Algorithm 1 (legitimate-only claim-centered calibration $\lambda=0.75$, zero-extra-calibration `Split-32`, and OSCR/CIAR/FAR/WID metrics).
   - `scripts/verify_prop1_invariance.py` — Standalone numerical verification of Proposition 1 (post-DC complex gain, phase, and linear-CFO rescaling invariance to $10^{-8}\text{--}10^{-7}$).
+  - `scripts/split_generator_and_validator.py` — Lightweight seed-based disjoint split generator (`Fit / Known / Unknown` + `Seen / Unseen Rx`) and anti-leakage JSON/SHA-256 manifest validator.
   - `manifests/` — Internally pre-specified SHA-256 manifest hash (`24e1a1e3...a5c4bca3`) and public WiSig receiver/device split manifest.
 - **Kept Private During Review (Available Upon Acceptance / Reasonable Request):**
   - Proprietary pretrained checkpoints (`*.pt`), full end-to-end neural backbone weights, and raw self-acquired BearPi SLE I/Q captures.
