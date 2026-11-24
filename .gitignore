@@ -1,0 +1,13 @@
+# Proprietary checkpoints, raw RF captures, and local caches
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.h5
+*.mat
+data_raw/
+private_models/
+__pycache__/
+*.pyc
+.DS_Store
